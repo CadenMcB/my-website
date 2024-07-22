@@ -235,11 +235,6 @@ section {
 #about-text {
     text-align: center;
 }
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-}
 .details-container {
     padding: 1.5rem;
     flex: 1;
@@ -343,11 +338,6 @@ section {
     box-sizing: border-box;
     position: relative; 
 }
-.projects-slideshow {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
 .projects-about-containers {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -365,31 +355,6 @@ section {
     border-color: rgb(163, 163, 163);
     text-align: center;
 }
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 2rem;
-    padding: 10px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    display: flex;
-}
-.carousel-btn:hover {
-    background-color: #0056b3;
-}
-.prev-btn {
-    left: -4rem;
-}
-.next-btn {
-    right: -4rem;
-}
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
@@ -404,10 +369,38 @@ section {
     color: black;
     text-align: center;
 }
-.project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
-}
+.gallery {
+    background: white;
+  }
+  
+  .gallery-cell {
+    width: 35%;
+    height: 400px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  .gallery .flickity-prev-next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    display: flex;
+  }
+
+  .gallery .flickity-prev-next-button:hover {
+    background-color: #0056b3;
+  }
 
 /* SKILLSET SECTION */
 #skillset {
@@ -566,5 +559,3 @@ footer p{
 #about-text {
     display: none;
 }
-
-  

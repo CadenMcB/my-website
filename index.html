@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="assets/terminal-favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://kit.fontawesome.com/a9f03cc5e6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -98,7 +99,6 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
 
     <section id="experience">
@@ -134,62 +134,54 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
 
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="projects-details-container">
-            <div class="projects-slideshow">
-                <div class="projects-about-containers">
+            <div class="gallery js-flickity" data-flickity='{ "prevNextButtons": true,  "freeScroll": true, "wrapAround": true }'>
 
-                    <div class="project-details color-container">
-                        <h2 class="experience-sub-title project-title">Lexer, Parser, and Type System</h2>
-                        <p>Developed a simple parser in Python which performs lexical analysis to tokenize a character stream which the parser then uses to create an abstract syntax tree for the program and checks for type violations using the provided grammar rules</p>
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">Lexer, Parser, and Type System</h2>
+                    <p>Developed a simple parser in Python which performs lexical analysis to tokenize a character stream which the parser then uses to create an abstract syntax tree for the program and checks for type violations using the provided grammar rules</p>
+                </div>
+    
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">JBOD System</h2>
+                    <p>Developed a working Just a Bunch of Disks (JBOD) system in C capable of reading and writing to disks on both the client and network side which uses a least recently used (LRU) cache implementation to improve efficiency</p>
+                </div>
+    
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">Large Language Model Project (LLM)</h2>
+                    <p>Worked with a Venture Partner to develop a custom GUI application in Python that uses the OpenAI API to analyze sales pipeline data to determine the likelihood of deals closing, score the pipeline against various sales methodologies (BANT, Meddic, etc.), and recommend sales tactics based on the analysis</p>
+                </div>
+    
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">GPT Jokes About Every Word</h2>
+                    <p>Developed an automated X (Twitter) bot in Python which uses the OpenAI API to generate a joke for a particular word every hour through GitHub Actions and posts it automatically to its page, @GPTOnEveryWord, using the X API</p>
+                    <div id="skillsetBts" class="btn-container">
+                        <button id="github-icon-btn" class="icon-button-stable" onclick="location.href='https://github.com/CadenMcB/GPT-Jokes-About-Every-Word'">
+                            <span class="icon-image-stable"><i class="fa-brands fa-github"></i></span>
+                            <span class="button-text">GitHub</span>
+                        </button>
+                        <button id="x-icon-btn" class="icon-button-stable" onclick="location.href='https://x.com/GPTOnEveryWord'">
+                            <span class="icon-image-stable"><i class="fa-brands fa-x-twitter"></i></span>
+                            <span class="button-text">X.com</span>
+                        </button>
                     </div>
-
-                    <div class="project-details color-container">
-                        <h2 class="experience-sub-title project-title">JBOD System</h2>
-                        <p>Developed a working Just a Bunch of Disks (JBOD) system in C capable of reading and writing to disks on both the client and network side which uses a least recently used (LRU) cache implementation to improve efficiency</p>
-                    </div>
-
-                    <div class="project-details color-container">
-                        <h2 class="experience-sub-title project-title">Large Language Model Project (LLM)</h2>
-                        <p>Worked with a Venture Partner to develop a custom GUI application in Python that uses the OpenAI API to analyze sales pipeline data to determine the likelihood of deals closing, score the pipeline against various sales methodologies (BANT, Meddic, etc.), and recommend sales tactics based on the analysis</p>
-                    </div>
-
-                    <div class="project-details color-container">
-                        <h2 class="experience-sub-title project-title">GPT Jokes About Every Word</h2>
-                        <p>Developed an automated X (Twitter) bot in Python which uses the OpenAI API to generate a joke for a particular word every hour through GitHub Actions and posts it automatically to its page, @GPTOnEveryWord, using the X API</p>
-                        <div id="skillsetBts" class="btn-container">
-                            <button id="github-icon-btn" class="icon-button-stable" onclick="location.href='https://github.com/CadenMcB/GPT-Jokes-About-Every-Word'">
-                                <span class="icon-image-stable"><i class="fa-brands fa-github"></i></span>
-                                <span class="button-text">GitHub</span>
-                            </button>
-                            <button id="x-icon-btn" class="icon-button-stable" onclick="location.href='https://x.com/GPTOnEveryWord'">
-                                <span class="icon-image-stable"><i class="fa-brands fa-x-twitter"></i></span>
-                                <span class="button-text">X.com</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="project-details color-container">
-                        <h2 class="experience-sub-title project-title">Course Scheduler</h2>
-                        <p>Developed a Java GUI application which mimics a college course scheduling application with two users, admin and student, where users are able to visually interact, store, and access data from a Derby Database with GUI elements in order to create a course schedule for a student during a particular semester</p>
-                    </div>
-
+                </div>
+    
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">Course Scheduler</h2>
+                    <p>Developed a Java GUI application which mimics a college course scheduling application with two users, admin and student, where users are able to visually interact, store, and access data from a Derby Database with GUI elements in order to create a course schedule for a student during a particular semester</p>
                 </div>
             </div>
-            <button class="carousel-btn prev-btn">
-                <i class="fa-solid fa-arrow-left fa-lg" style="color: #ffffff;"></i>
-            </button>
-            <button class="carousel-btn next-btn">
-                <i class="fa-solid fa-arrow-right fa-lg" style="color: #ffffff;"></i>
-            </button>
+
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skillset'">
     </section>
+    
+
 
     <section id="skillset">
         <p class="section__text__p1">Learn About My</p>
@@ -304,7 +296,6 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
 
     <section id="contact">
@@ -333,6 +324,7 @@
         <p>Copyright &#169; 2024 Caden McBride. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
 </body>
 </html>
