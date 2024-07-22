@@ -42,6 +42,7 @@
 @media screen and (max-width: 800px) {
     .gallery-cell {
         width: 50%;
+        height: 450px;
     }
 }
 
