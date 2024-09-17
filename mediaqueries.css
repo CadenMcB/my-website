@@ -35,8 +35,12 @@
     .about-containers {
         margin-top: 0;
     }
-    
+}
 
+@media screen and (max-width: 1000px) {
+    .skillset-details-container {
+        grid-template-columns: none;  /* Make value none for smaller screens*/
+      }
 }
 
 @media screen and (max-width: 800px) {
@@ -73,7 +77,7 @@
     .contact-info-container p, .nav-links li a {
         font-size: 1rem;
     }
-    .experience-sub-title, .skillset-sub-title{
+    .experience-sub-title{
         font-size: 1.25rem;
     }
     .experience-company-dates, .experience-details-list li {
@@ -104,6 +108,20 @@
     }
     .project-details p {
         font-size: 1rem;
+    }
+    .skillset-details-container-section {
+        .sub-title-div {
+            .section-sub-title {
+                font-size: 1.25rem; /* Reduced font size for smaller screens */
+            }
+        }
+        .skills-list-div {
+            .skills-list {
+                .skill {
+                    font-size: 1rem; /* Reduced font size for smaller screens */
+                }
+            }
+        }
     }
 }
 

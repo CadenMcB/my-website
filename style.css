@@ -406,47 +406,67 @@ section {
 #skillset {
     position: relative;
 }
-.skillset-sub-title {
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
+
+.skillset-details-container {
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 50% 50%;  /* Make value none for smaller screens*/
+    grid-row: auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-right: 30px;
+    padding: 2rem;
+    transition: transform 0.5s ease-in-out;
 }
+
 .skillset-details-container-section {
-    padding: 1.5rem;
+    /* Block Design */
     background: white;
-    flex: 1;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
+    padding: 1.5rem;
     text-align: center;
+    
+
+    /* Used for Frameworks and Libraries Blocks */
+    .mini-container {
+        height: 15vh;
+    }
+
+    /* Used for Programming and Software Blocks */
+    .format-container {
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-title-div {
+        height: 20%;
+
+        .section-sub-title {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 1.75rem;
+        }
+    }
+    .skills-list-div {
+        height: 80%;
+
+        .skills-list {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 10px;
+    
+            .skill {
+                font-size: 1.1rem;
+                font-weight: lighter;
+                padding: 7px;
+            }
+        }
+    }
 }
-.skillset-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.skillset-article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: center;
-}
-article {
-    display: flex;
-    width: 13rem;
-    justify-content: left;
-    gap: 0.5rem;
-}
-article::before {
-    content: ">";
-    margin-right: 0.5rem;
-    margin-top: 0.5rem;
-    font-size: 1.25rem;
-    color: rgb(85, 85, 85);
-}
+
 
 /* CONTACT SECTION */
 #contact {
@@ -553,6 +573,5 @@ footer p{
 #profile-download-cv-btn {
     display: none;
 }
-#about-text {
-    display: none;
-}
+
+
