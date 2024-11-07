@@ -118,7 +118,7 @@
         .skills-list-div {
             .skills-list {
                 .skill {
-                    font-size: 1rem; /* Reduced font size for smaller screens */
+                    font-size: .9rem; /* Reduced font size for smaller screens */
                 }
             }
         }
