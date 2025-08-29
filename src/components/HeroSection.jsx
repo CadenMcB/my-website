@@ -10,7 +10,7 @@ export const HeroSection = () => {
                 className="mx-auto mb-8 w-80 h-80 object-cover rounded-xl shadow-lg opacity-0 animate-fade-in-delay-1"
             />
             <div className="space-y-4">
-                <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+                <h1 className="text-3xl md:text-6xl font-bold tracking-tight">
                     <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
                     <span className="opacity-0 animate-fade-in-delay-1"> Caden</span>
                     <span className="opacity-0 animate-fade-in-delay-2"> McBride</span>
