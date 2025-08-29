@@ -5,7 +5,7 @@ export const HeroSection = () => {
     return <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-4">
         <div className="container max-w-4xl mx-auto text-center z-10">
             <img
-                src="src/assets/Caden-McBride-Profile.jpg"
+                src="public/assets/Caden-McBride-Profile.jpg"
                 alt="Caden McBride"
                 className="mx-auto mb-8 w-80 h-80 object-cover rounded-xl shadow-lg opacity-0 animate-fade-in-delay-1"
             />

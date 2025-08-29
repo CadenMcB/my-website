@@ -11,7 +11,7 @@ export const AboutSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="flex justify-center items-center w-full h-full">
                     <img
-                        src="src/assets/Caden-McBride-Casual.jpg"
+                        src="public/assets/Caden-McBride-Casual.jpg"
                         alt="Caden McBride"
                         className="w-3/4 max-w-xs md:max-w-sm lg:max-w-md h-auto rounded-xl shadow-lg mx-auto"
                     />
