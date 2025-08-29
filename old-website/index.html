@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caden McBride</title>
+    <link rel="icon" type="image/png" href="assets/terminal-favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://kit.fontawesome.com/a9f03cc5e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Caden McBride</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skillset">Skillset</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Caden McBride</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#skillset" onclick="toggleMenu()">Skillset</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+                <img src="./assets/Caden-McBride-Profile.jpg" alt="Caden McBride's profile picture" id="profile-image">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Caden McBride</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button id="profile-download-cv-btn" class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                <button id="profile-contact-info-btn" class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <button id="github-icon-btn" class="icon-button" onclick="location.href='https://github.com/CadenMcB'">
+                    <span class="icon-image"><i class="fa-brands fa-github"></i></span>
+                    <span class="button-text">GitHub</span>
+                </button>
+                <button id="linkedin-icon-btn" class="icon-button" onclick="location.href='https://www.linkedin.com/in/cadenmcbride/'">
+                    <span class="icon-image"><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span class="button-text">LinkedIn</span>
+                </button>
+                <button id="x-icon-btn" class="icon-button" onclick="location.href='https://x.com/CadenMcBride'">
+                    <span class="icon-image"><i class="fa-brands fa-x-twitter"></i></span>
+                    <span class="button-text">X.com</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/Caden-McBride-Casual.jpg" alt="Caden McBride holding Macintosh Plus" id="about-image">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <div class="icon">
+                            <i class="fa-solid fa-school fa-lg" style="color: #000000;"></i>
+                        </div>
+                        <h3>University</h3>
+                        <p>The Pennsylvania State University<br>University Park, PA</p>
+                    </div>
+                    <div class="details-container">
+                        <div class="icon">
+                            <i class="fa-solid fa-graduation-cap fa-lg" style="color: #000000;"></i>
+                        </div>
+                        <h3>Degree</h3>
+                        <p>B.S. Computer Science <br><i>Estimated Graduation:<br> December 2025</i></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p id="about-text">I’m a junior at The Pennsylvania State University, majoring in Computer Science with a minor in Computer Engineering, on track to graduate a semester early in December 2025. I’m actively seeking a Summer 2025 internship that will allow me to apply my knowledge in a real-world setting, deepen my software engineering skills, and work on projects that push the boundaries of technology. With a foundation in both software and hardware through my major and minor, I bring a well-rounded perspective to problem-solving and project execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="experience-about-containers">
+                <div class="experience-details-container-section">
+                    <h2 class="experience-sub-title">Enterprise Data Governance Intern</h2>
+                    <div class="experience-company-dates">
+                        <span class="experience-company">Geisinger System Services</span>
+                        <span class="experience-dates">June 2024 - Present</span>
+                    </div>
+                    <ul id="geisinger-experience" class="experience-details-list">
+                        <li>Developed SQL scripts to query and analyze large-scale healthcare databases to identify potential data inconsistencies and anomalies in master data management (MDM) pipelines</li>
+                        <li>Designed and maintained dashboards to visualize real-time data integrity metrics to support data governance decisions</li>
+                        <li>Worked with software engineers and data architects to validate and deploy production updates for smooth system integration</li>
+                        <li>Automated data monitoring and incident tracking processes using Python to reduce manual effort and improve response times</li>
+                    </ul>
+                </div>
+                <div class="experience-details-container-section">
+                    <h2 class="experience-sub-title">Software Engineering Intern</h2>
+                    <div class="experience-company-dates">
+                        <span class="experience-company">Golden Section Ventures</span>
+                        <span class="experience-dates">December 2023 - May 2024</span>
+                    </div>
+                    <ul id="golden-section-ventures-experience" class="experience-details-list">
+                        <li>Developed a desktop GUI application leveraging OpenAI GPT models to analyze sales pipeline data, predict deal success, and recommend strategies based on BANT and MEDDIC frameworks</li>
+                        <li>Extracted, transformed, and cleansed CRM data using Python, NumPy, and pandas to ensure high-quality AI input</li>
+                        <li>Engineered and optimized AI prompts to enhance the accuracy and relevance of sales insights from the models</li>
+                        <li>Delivered an AI-powered tool that streamlined deal forecasting and ensured its adoption through QA testing and stakeholder feedback</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-details-container">
+            <div class="gallery js-flickity" data-flickity='{ "prevNextButtons": true,  "freeScroll": true, "wrapAround": true }'>
+
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">Vehicle Vision</h2>
+                    <p>Actively developing and training a computer vision system using the YOLOv11 algorithm to accurately detect road markings and signs while estimating their distances from the camera for enhanced scene understanding</p>
+                </div>
+
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">Pinhole Camera Model</h2>
+                    <p>Utilized camera calibration parameters from two camera views to project 3D mocap points into 2D pixel coordinates to perform triangulation and determine the location and measurement of objects in the scene through use of the pinhole camera model, fundamental matrices, and epipolar geometry</p>
+                </div>
+
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">Convolutional Neural Net</h2>
+                    <p>Implemented the forward pass of an 18-layer Convolutional Neural Network (CNN) using the CIFAR-10 dataset to process 32x32 color images through multi-stage filtering, dimensionality reduction, and feature extraction to classify objects into 10 distinct categories</p>
+                </div>
+
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">Parser and Type System</h2>
+                    <p>Implemented a system which recursively parses a character stream for a model programming language to verify if it is following proper grammar rules and typing for the language</p>
+                </div>
+    
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">JBOD System</h2>
+                    <p>Developed a working Just a Bunch of Disks (JBOD) system capable of reading and writing to disks on both the client and network side which uses a least recently used (LRU) cache implementation to improve efficiency</p>
+                </div>
+    
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">LLM Sales Analysis</h2>
+                    <p>Worked with a venture partner to develop a custom desktop GUI application that utilizes a GPT-4 model to analyze sales pipeline data to determine the likelihood of deals closing, score the pipeline against various sales methodologies (BANT, Meddic, etc.), and recommend sales tactics based on the analysis</p>
+                </div>
+    
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">GPT Joke Bot</h2>
+                    <p>Created an automated X (Twitter) bot which uses the GPT-4o model to generate a joke for every word in the English dictionary and posts it automatically to its page, @GPTOnEveryWord, every hour through GitHub Actions</p>
+                    <div id="skillsetBts" class="btn-container">
+                        <button id="github-icon-btn" class="icon-button-stable" onclick="location.href='https://github.com/CadenMcB/GPT-Jokes-About-Every-Word'">
+                            <span class="icon-image-stable"><i class="fa-brands fa-github"></i></span>
+                            <span class="button-text">GitHub</span>
+                        </button>
+                        <button id="x-icon-btn" class="icon-button-stable" onclick="location.href='https://x.com/GPTOnEveryWord'">
+                            <span class="icon-image-stable"><i class="fa-brands fa-x-twitter"></i></span>
+                            <span class="button-text">X.com</span>
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="project-details color-container gallery-cell">
+                    <h2 class="experience-sub-title project-title">Course Scheduler Application</h2>
+                    <p>Developed a multi-user desktop GUI application which mimics a college course scheduling application where users are able to visually interact, store, and access data from a local database to create courses and student schedules</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="skillset">
+        <p class="section__text__p1">Learn About My</p>
+        <h1 class="title">Skillset</h1>
+            <div class="skillset-details-container">
+                <div class="skillset-details-container-section">
+                    <div class="format-container">
+                        <div class="sub-title-div">
+                            <h2 class="section-sub-title">Programming Languages</h2>
+                        </div>
+                        <div class="skills-list-div">
+                            <ul class="skills-list">
+                                <li class="skill">Bash</li>
+                                <li class="skill">C</li>
+                                <li class="skill">C++</li>
+                                <li class="skill">CSS/HTML</li>
+                                <li class="skill">Java</li>
+                                <li class="skill">JavaScript</li>
+                                <li class="skill">MIPS</li>
+                                <li class="skill">SQL</li>
+                                <li class="skill">Swift</li>
+                                <li class="skill">Python</li>
+                                <li class="skill">Verilog</li>
+                            </ul>         
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skillset-details-container-section">
+                    <div class="format-container">
+                        <div class="sub-title-div">
+                            <h2 class="section-sub-title">Software & Tools</h2>
+                        </div>
+                        <div class="skills-list-div">
+                            <ul class="skills-list">
+                                <li class="skill">NetBeans</li>
+                                <li class="skill">GitHub/git</li>
+                                <li class="skill">MATLAB</li>
+                                <li class="skill">Power BI</li>
+                                <li class="skill">VS Code</li>
+                                <li class="skill">MySQLWorkbench</li>
+                                <li class="skill">Unix</li>
+                                <li class="skill">Vivado</li>
+                                <li class="skill">VMware</li>
+                                <li class="skill">Xcode</li>
+                            </ul>      
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="skillset-details-container-section">
+                    <div class="mini-container">
+                        <div class="sub-title-div">
+                            <h2 class="section-sub-title">Frameworks</h2>
+                        </div>
+                        <div class="skills-list-div">
+                            <ul class="skills-list">
+                                <li class="skill">React</li>
+                                <li class="skill">Node.js</li>
+                            </ul>      
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skillset-details-container-section">
+                    <div class="mini-container">
+                        <div class="sub-title-div">
+                            <h2 class="section-sub-title">Libraries</h2>
+                        </div>
+                        <div class="skills-list-div">
+                            <ul class="skills-list">
+                                <li class="skill">NumPy</li>
+                                <li class="skill">OpenCV</li>
+                                <li class="skill">pandas</li>
+                                <li class="skill">PyTorch</li>
+                                <li class="skill">tkinter</li>
+                            </ul>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+  
+
+    <section id="contact">
+        <p class="section__text__p1">Let's Connect</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <button id="linkedin-icon-btn" class="icon-button-stable" onclick="location.href='https://www.linkedin.com/in/cadenmcbride/'">
+                <span class="icon-image-stable"><i class="fa-brands fa-linkedin-in"></i></span>
+                <span class="button-text">LinkedIn</span>
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skillset">Skillset</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Caden McBride. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+</body>
+</html>
